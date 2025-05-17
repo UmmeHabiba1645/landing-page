@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #fef176;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+header input {
+  padding: 5px;
+  width: 200px;
+}
+
+.hero {
+  background: linear-gradient(to right, #009688, #ff9800);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 2em;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero:hover {
+  transform: scale(1.05);
+}
+
+.sale-banner {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 2em;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.brands,
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.brands div,
+.categories div {
+  background: white;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.brands div:hover,
+.categories div:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer input {
+  padding: 5px;
+  margin: 5px;
+}
+
+.highlight {
+  font-size: 1.5em;
+  font-weight: bold;
+}
