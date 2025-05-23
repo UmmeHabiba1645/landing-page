@@ -19,22 +19,44 @@
       <a href="contacts.html">Contact</a>
     </nav>
     <input type="text" placeholder="What are you looking for...">
-    <button onclick="loginHandler()">Login/Signup</button>
+    <!-- <button onclick="loginHandler(footer)">Login/Signup</button> -->
+    <button onclick="scrollToFooter()">Login/Signup</button>
+
   </header>
 
   <div class="hero">Seek your wishes at My Store</div>
 
   <div class="sale-banner">SALE 70% OFF</div>
 
-  <section class="brands" id="brandSection">
+<!--   <section class="brands" id="brandSection">
     
   </section>
 
   <section class="categories" id="categorySection">
 
-  </section>
+  </section> -->
+  <section class="gallery" id="gallerySection">
+  <h2>Explore Our Top Picks</h2>
+  <div class="gallery-grid">
+    <img src="shampoo.jpeg" alt="Shampoo">
+    <img src="jew.webp" alt="Jewellery">
+    <img src="mak.jpeg" alt="Makeup">
+    <img src="fur.jpeg" alt="Furniture">
+  </div>
+</section>
+ <section class="gallery" id="gallerySection">
+  <div class="gallery-grid">
+    <img src="shoe-1_1.jpg" alt="Shoes">
+    <img src="watch-2.jpg" alt="Watch">
+    <img src="perfume.jpg" alt="Perfume">
+    <img src="shirt-1.jpg" alt="Shirt">
+  </div>
+</section>
+  <section class="brands" id="brandSection"></section>
+<section class="categories" id="categorySection"></section>
 
-  <footer>
+
+<!--   <footer>
     <p>Stay Connected</p>
     <input type="email" placeholder="Your Email Address">
     <button onclick="signup()">SignUP</button><br>
@@ -43,8 +65,36 @@
     <input type="text" placeholder="WhatsApp Account">
     <button onclick="signup()">SignUP</button>
     <p>We Accept: VISA, MasterCard, PayPal</p>
-  </footer>
+  </footer> -->
+<footer id="footer">
+  <p>Stay Connected</p>
+
+  <div>
+    <input type="text" id="emailInput" placeholder="Your Email Address">
+    <button onclick="validateInput('emailInput')">SignUP</button>
+  </div>
+
+  <div>
+    <input type="text" id="phoneInput" placeholder="Your Phone Number">
+    <button onclick="validateInput('phoneInput')">SignUP</button>
+  </div>
+
+  <div>
+    <input type="text" id="whatsappInput" placeholder="WhatsApp Account">
+    <button onclick="validateInput('whatsappInput')">SignUP</button>
+  </div>
+
+  <p>We Accept: VISA, MasterCard, PayPal</p>
+</footer>
+
+
 
   <script src="Mtask.js"></script>
+  <script>
+  function scrollToFooter() {
+    document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+
 </body>
 </html>
